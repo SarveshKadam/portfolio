@@ -1,70 +1,154 @@
 /*GLOBAL*/
-body{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 10px;
-    margin: 0;
-    width: 100vw;
+*,
+*::after,
+*::before { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato',sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color:rgb(235, 231, 231);
+    box-sizing: border-box;
+}
+/*----------- BUTTONS -----------*/
+
+.btn:link,
+.btn:visited{
     text-align: center;
-}
-
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-a{
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid rgb(235, 231, 231);
     text-decoration: none;
-    color:inherit;
+    color:rgb(235, 231, 231);
+    transition: background-color 0.2s, border 0.2s;
+} 
+
+.btn:hover,
+.btn:active{
+    background-color: #f1c40f;
+    border: 1px solid transparent;
+} 
+
+.btn ion-icon[name="arrow-forward-outline"]{
+    vertical-align: middle;
+    margin-left: 1rem;
 }
+
+.btn ion-icon[name="arrow-forward-outline"]:hover{
+    transform: rotate(90deg);
+}
+
+/*ICONS*/
+.small-icon{
+    font-size: 2rem;
+}
+
+
+ion-icon[name="logo-github"],
+ion-icon[name="logo-linkedin"],
+ion-icon[name="logo-twitter"]{
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+
+ion-icon[name="logo-github"]:hover{
+	color: #6cc644;
+}
+ion-icon[name="logo-linkedin"]:hover{
+	color: #007bb5;
+}
+ion-icon[name="logo-twitter"]:hover{
+	color: #1da1f2;
+}
+
+
+
+
+/*---------- MAIN NAVIGATION -------------*/
+.main-nav{
+    list-style: none;
+    float: left;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color:rgb(235, 231, 231);
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    color: #f1c40f;
+}   
+
+.social-icon{
+    list-style: none;
+    float: right;
+}
+.social-icon li{
+    display: inline-block;
+    margin-right: 4rem;
+    margin-top: 3.8rem;
+}
+
+.social-icon li a:link,
+.social-icon li a:visited{
+    text-decoration: none;
+    color:rgb(235, 231, 231);
+}
+
 /*HEADER*/
 
-header{
-    background-color:lightskyblue;
-    padding: 1rem;
+.header{
     height: 100vh;
-}
-
-nav ul{
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-}
-
-nav li{
-    margin: 0 1rem;
-}
-
-header h1{
-    font-size: 5rem;
-}
-
-header p{
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    border-bottom: 1px solid lightgrey;
-}
-
-.rotate{
-    margin-top: 2rem;
-    font-size: 3rem;
-    opacity: 0.4;
-}
-
-/*Parralex section*/
-.parralex{
-    background-image: url('images/backgroundone.jpg');
-    background-position: center;
-    height: 100vh;
+    background-image: linear-gradient(to right bottom,rgba(30, 14, 36, 0.801),rgba(28, 3, 37, 0.801)) ,url('./images/hero.jpg');
     background-size: cover;
+    background-position: center;
+    overflow: hidden;
     background-attachment: fixed;
+    position: relative;
+}
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+.hero-text h1{
+    font-size: 250%;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
 }
 
-.parralex ul{
-    font-size: 1.8rem;
-    padding: 2rem;
-}
-
-.parralex li{
-    margin: 2rem 0;
-}
+.name{
+    animation : type 3s steps(13);
+    overflow:hidden;
+    white-space:nowrap;
+    width: 13ch;
+    color:#f1c40f;
+  }
+  
+@keyframes type{
+    0%{
+      width: 0ch;
+    }
+    100%{
+      width: 13ch;
+    }
+  }
