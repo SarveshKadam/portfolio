@@ -34,7 +34,7 @@ body {
 
 .btn:hover,
 .btn:active{
-    background-color: #f1c40f;
+    background-color: #8f771a;
     border: 1px solid transparent;
 } 
 
@@ -89,12 +89,13 @@ ion-icon[name="logo-twitter"]:hover{
     text-decoration: none;
     color:rgb(235, 231, 231);
     text-transform: uppercase;
-    transition: color 0.2s;
+    transition: color 0.2s, transform 0.2s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active{
     color: #f1c40f;
+    transform: scale(1.2,1.2);
 }   
 
 .social-icon{
@@ -117,7 +118,7 @@ ion-icon[name="logo-twitter"]:hover{
 
 .header{
     height: 100vh;
-    background-image: linear-gradient(to right bottom,rgba(30, 14, 36, 0.801),rgba(28, 3, 37, 0.801)) ,url('./images/hero.jpg');
+    background-image: linear-gradient(to right bottom,rgba(30, 14, 36, 0.9),rgba(28, 3, 37, 0.9)) ,url('./images/hero.jpg');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -133,7 +134,7 @@ ion-icon[name="logo-twitter"]:hover{
 .hero-text h1{
     font-size: 250%;
     font-weight: 300;
-    letter-spacing: 0.5rem;
+    letter-spacing: 0.4rem;
 }
 
 .name{
@@ -141,14 +142,10 @@ ion-icon[name="logo-twitter"]:hover{
     overflow:hidden;
     white-space:nowrap;
     width: 13ch;
-    color:#f1c40f;
+    color:#a8890d;
+    font-family: Marcellus;
   }
   
-@keyframes type{
-    0%{
-      width: 0ch;
-    }
-    100%{
-      width: 13ch;
-    }
-  }
+.hero-text a{
+    margin-top: 1rem;
+}
