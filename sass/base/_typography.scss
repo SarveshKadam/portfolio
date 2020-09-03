@@ -1,0 +1,63 @@
+.heading-primary{
+    color:$color-white;
+    font-size: 4.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+
+    &--main--name{
+        color:$color-golden;
+        font-family: Marcellus;
+        width: 100%;
+      }
+}
+
+
+.heading-secondary{
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.heading-secondary::after{
+  content:"";
+  display: block;
+  margin:0 auto;
+  height: 0.2rem;
+  width: 10rem;
+  margin-top: 2rem;
+  background-color: $color-golden;
+  margin-bottom: 2rem;
+}
+
+.heading-tertiary{
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+.skills{
+  font-size: 2rem;
+  padding: 1.5rem;
+
+  & li{
+    margin-bottom: 1rem;
+  }
+
+  & li img{
+   vertical-align: middle;;
+  }
+
+  & ion-icon{
+    font-size: 3.2rem;
+    vertical-align: middle;
+  }
+
+}
+.skill{
+  padding: 0rem 2rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  color:$color-golden;
+}

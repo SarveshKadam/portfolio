@@ -1,0 +1,19 @@
+.myimage {
+    position: relative;
+    margin-bottom: 4rem;
+    margin-left: 3rem;
+    border: 10px solid $color-grey-light-1 ;
+    z-index: 1;
+}
+
+.myimage::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -3rem;
+    top: 2rem;
+    height: 25rem;
+    width: 25rem;
+    border: 7px solid $color-golden;
+    z-index: -1;
+}

@@ -1,0 +1,55 @@
+/*---------- MAIN NAVIGATION -------------*/
+.header--main-nav{
+    list-style: none;
+    float: left;
+}
+.header--main-nav li{
+    display: inline-block;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+.header--main-nav li a:link,
+.header--main-nav li a:visited{
+    text-decoration: none;
+    color:$color-white;
+    text-transform: uppercase;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.header--main-nav li a:hover,
+.header--main-nav li a:active{
+    color: #f1c40f;
+    transform: scale(1.2,1.2);
+}   
+
+.header--main-social{
+    list-style: none;
+    float: right;
+}
+.header--main-social li{
+    display: inline-block;
+    margin-right: 4rem;
+    margin-top: 3.8rem;
+}
+
+.header--main-social li a:link,
+.header--main-social li a:visited{
+    text-decoration: none;
+    color:$color-white;
+}
+
+.footer--main-social{
+    list-style: none;
+}
+.footer--main-social li{
+    display: inline-block;
+    margin-right: 4rem;
+    margin-top: 3.8rem;
+}
+
+.footer--main-social li a:link,
+.footer--main-social li a:visited{
+    text-decoration: none;
+    color:$color-white;
+}

@@ -1,0 +1,27 @@
+.section-form{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 110%;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+	width: 100%;
+	padding: 0.7rem;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+
+textarea{
+    height: 10rem;
+}
+
+.labelName{
+   padding-left: 8rem;
+}
+
+*:focus{outline: none;}

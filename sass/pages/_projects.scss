@@ -1,0 +1,21 @@
+.section-project{
+    &__text{
+        float: left;
+
+        &--title{
+            font-weight: bold;
+        }
+
+        &--desc{
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__image{
+
+        & .img-fluid{
+            width: 100%;
+
+        }
+    }
+}

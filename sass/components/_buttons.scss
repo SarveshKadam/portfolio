@@ -1,0 +1,67 @@
+
+.btn {
+    &:link,
+    &:visited{
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    }
+
+&--full:link,
+&--full:visited{
+    border: 1px solid $color-pale-white;
+    color:$color-pale-white;
+    border-radius: 1rem;
+    transition: background-color 0.2s, border 0.2s;
+} 
+
+&--full:hover,
+&--full:active{
+    background-color: #8f771a;
+    border: 1px solid transparent;
+} 
+
+& ion-icon[name="arrow-forward-outline"]{
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+
+&--black:link,
+&--black:visited{
+    color: $color-black;
+    border: 1px solid $color-black;
+    margin-right: 2rem;
+    transition: color 0.2s, border 0.2s, background-color 0.2s;
+    border-radius: 1rem;
+}
+
+&--black:hover,
+&--black:active{
+    color: $color-pale-white;
+    border: 1px solid transparent;
+    background-color: #8f771a;
+}
+
+}
+
+input[type=submit]{
+    display: inline-block;
+    text-align: center;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    background-color: $color-white;
+    color: $color-black;
+    border: 1px solid $color-black;
+    margin-right: 2rem;
+    transition: color 0.2s, border 0.2s, background-color 0.2s;
+    border-radius: 1rem;
+    }
+
+input[type=submit]:hover,
+input[type=submit]:active{
+        color: $color-pale-white;
+        border: 1px solid transparent;
+        background-color: #8f771a;
+    }

@@ -1,38 +1,265 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Sarvesh Kadam</title>
 </head>
 <body>
     <header class="header">
-        <div class="nav">
-            <ul class="main-nav">
+        <nav class="header--main">
+            <ul class="header--main-nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <ul class="social-icon">
+            <ul class="header--main-social">
                 <li><a href="#" class="git"><ion-icon name="logo-github" class="small-icon"></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-linkedin" class="small-icon"></ion-icon></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-twitter" class="small-icon"></ion-icon></ion-icon></a></li>
             </ul>
-        </div>
-            <div class="hero-text">
-            <h1>Hello, I'm <span class="name">Sarvesh Kadam</span>&period;</h1>
-            <h1>I am a web developer&period;</h1><br>
-            <a href="#" class="btn btn-full">View my work<ion-icon name="arrow-forward-outline"></ion-icon></a>
+		</nav>
+            <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Hello, I'm <span class="heading-primary--main--name">Sarvesh Kadam</span>&period;</span>
+                <span class="heading-primary--sub">I am a web developer&period;</span>
+            </h1>
+            <a href="#" class="btn btn--full">View my work<ion-icon name="arrow-forward-outline"></ion-icon></a>
             </div>
     </header>
+    <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">About</h2>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2 ">
+                <div class="myimage">
+                <img src="images/profile.jpg" alt="Profile photo" width="250" height="250">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse ut qui at nulla autem,
+                 eum minima obcaecati molestiae ducimus iure corrupti a, nam nostrum numquam facere amet iste sint.
+                ipsum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi libero veniam obcaecati provident sed
+                earum eos, labore ratione reprehenderit amet possimus quaerat, neque dolorum error distinctio odio porro deserunt dicta.</p>
+            </div>
+            <div class="col-1-of-2 skills">
+                <h3 class="heading-tertiary u-center-text">Skill-set </h3>
+                <ul class="skills">
+                    <li><ion-icon name="logo-html5"></ion-icon><span class="skill">HTML</span></li>
+                    <li><ion-icon name="logo-css3"></ion-icon><span class="skill">CSS</span></li>
+                    <li><ion-icon name="logo-sass"></ion-icon><span class="skill">SASS</span></li>
+                    <li><ion-icon name="logo-javascript"></ion-icon><span class="skill">JavaScript</span></li>
+                    <li><ion-icon name="logo-nodejs"></ion-icon><span class="skill">Node js</span></li>
+                    <li><img src="https://img.icons8.com/windows/32/000000/postgreesql.png"/><span class="skill">Postgresql</span></li>
+                    <li><ion-icon name="logo-github"></ion-icon><span class="skill">Git-Hub</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
+    <section class="section-project">
+    <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">Projects</h2>
+    </div>
+    <div class="row">
+    	<div class="col-1-of-3">
+    		<div class="section-project__text">
+                <h3 class="section-project__text--title heading-tertiary">Project Title</h3>
+                <div>
+                  <p class="section-project__text--desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Excepturi neque, ipsa animi maiores repellendus distinctio
+                    aperiam earum dolor voluptatum consequatur blanditiis
+                    inventore debitis fuga numquam voluptate ex architecto
+                    itaque molestiae.
+                  </p>
+                </div>
+                <a target="_blank" class="btn btn--black" href="#!">
+                  See Live
+                </a>
+                <a target="_blank" class="btn btn--black" href="#!">
+                  Source Code
+                </a>
+              </div>
+    	</div>
+    	<div class="col-2-of-3">
+    		<div class="section-project__image card">
+                <div class="card__side card__side--front">
+                    <a href="#!" target="_blank">
+                    <img class="img-fluid " src="./images/projectresize.jpg" > <!--  size 768*432 -->
+                    </a>
+                </div>
+                <div class="card__side card__side--back">
+                   <div class="card__cta">
+                       <div class="card__tech">
+                           <p>
+                                CSS + JavaScript
+                           </p>
+                       </div>
+                       <a href="#" class="btn btn--full">More info</a>
+                   </div>
+                </div>
+              </div>
+    	</div>
+    </div>
+    <div class="row">
+        <div class="col-2-of-3">
+            <div class="section-project__image card">
+                <div class="card__side card__side--front">
+                    <a href="#!" target="_blank">
+                    <img class="img-fluid " src="./images/projectresize.jpg" > <!--  size 768*432 -->
+                    </a>
+                </div>
+                <div class="card__side card__side--back">
+                   <div class="card__cta">
+                       <div class="card__tech">
+                           <p>
+                                CSS + JavaScript
+                           </p>
+                       </div>
+                       <a href="#" class="btn btn--full">More info</a>
+                   </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-1-of-3">
+            <div class="section-project__text">
+                <h3 class="section-project__text--title heading-tertiary">Project Title</h3>
+                <div>
+                  <p class="section-project__text--desc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Excepturi neque, ipsa animi maiores repellendus distinctio
+                    aperiam earum dolor voluptatum consequatur blanditiis
+                    inventore debitis fuga numquam voluptate ex architecto
+                    itaque molestiae.
+                  </p>
+                </div>
+                <a target="_blank" class="btn btn--black" href="#!">
+                  See Live
+                </a>
+                <a target="_blank" class="btn btn--black" href="#!">
+                  Source Code
+                </a>
+              </div>
+        </div>
+    </div>
+    </section>
+    <section class="section-blog">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">Blog</h2>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4 blog">
+                <div class="blog__picture blog__picture--1">
+                    &nbsp;
+                </div>
+                <h4 class="blog__heading">
+                    <span class="blog__heading-span blog__heading-span--1">The Sea Explorer</span>
+                </h4>
+                <div class="blog__details">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dignissimos 
+                    untur dolorum, beatae commodi magnam repudiandae id ea optio laboriosam. Illum!</p>
+                </div>
+            </div>
+            <div class="col-1-of-4 blog-box">
+                <div class="blog__picture blog__picture--1">
+                    &nbsp;
+                </div>
+                <h4 class="blog__heading">
+                    <span class="blog__heading-span blog__heading-span--1">The Sea Explorer</span>
+                </h4>
+                <div class="blog__details">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dignissimos 
+                    untur dolorum, beatae commodi magnam repudiandae id ea optio laboriosam. Illum!</p>
+                </div>
+            </div>
+            <div class="col-1-of-4 blog-box">
+                <div class="blog__picture blog__picture--1">
+                    &nbsp;
+                </div>
+                <h4 class="blog__heading">
+                    <span class="blog__heading-span blog__heading-span--1">The Sea Explorer</span>
+                </h4>
+                <div class="blog__details">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dignissimos 
+                    untur dolorum, beatae commodi magnam repudiandae id ea optio laboriosam. Illum!</p>
+                </div>
+            </div>
+            <div class="col-1-of-4 blog-box">
+                <div class="blog__picture blog__picture--1">
+                    &nbsp;
+                </div>
+                <h4 class="blog__heading">
+                    <span class="blog__heading-span blog__heading-span--1">The Sea Explorer</span>
+                </h4>
+                <div class="blog__details">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dignissimos 
+                    untur dolorum, beatae commodi magnam repudiandae id ea optio laboriosam. Illum!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-form">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading-secondary">Contact Me</h2>
+            <h3 class="heading-tertiary">I would like to hear from you</h3>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col-1-of-3 labelName">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3 labelName">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3 labelName">
+                        <label>Drop me a line</label>
+                    </div>
+                    <div class="col-2-of-3">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col-2-of-3 ">
+                        <input type="submit" value="Send it!">
+                    </div>
+                </div>
+            </form>
+    </section>
 
-
+    <footer>
+        <div class="row footer-content">
+            <div class="row">
+            <ul class="footer--main-social">
+                <li><a href="#" class="git"><ion-icon name="logo-github" class="small-icon"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin" class="small-icon"></ion-icon></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter" class="small-icon"></ion-icon></ion-icon></a></li>
+            </ul>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2020 by Omnifood. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 
 
 

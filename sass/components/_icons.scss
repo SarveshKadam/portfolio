@@ -1,0 +1,23 @@
+/*ICONS*/
+.small-icon{
+    font-size: 2.2rem;
+}
+
+
+ion-icon[name="logo-github"],
+ion-icon[name="logo-linkedin"],
+ion-icon[name="logo-twitter"]{
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+
+ion-icon[name="logo-github"]:hover{
+	color: #6cc644;
+}
+ion-icon[name="logo-linkedin"]:hover{
+	color: #007bb5;
+}
+ion-icon[name="logo-twitter"]:hover{
+	color: #1da1f2;
+}

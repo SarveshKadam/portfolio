@@ -1,0 +1,14 @@
+footer{
+    background-color: $color-primary;
+    text-align: center;
+
+    &--main-social{
+        margin-bottom: 0;
+        margin-top: 5rem;
+    }
+
+    & p{
+        margin-bottom: 5rem;
+        color: $color-white;
+    }
+}
