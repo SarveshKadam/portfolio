@@ -46,6 +46,29 @@
 
 }
 
+.toggle-btn{
+    display: none;
+}
+
+@include respond(tab-port){
+    .toggle-btn{
+        display: block;
+        float: right;
+        color:white;
+        font-size: 8rem;
+        background-color: transparent;
+        border: transparent;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    
+    .toggle-btn:active{
+        transform:translateY(2rem);
+    }
+ }
+
+
 input[type=submit]{
     display: inline-block;
     text-align: center;
@@ -57,6 +80,9 @@ input[type=submit]{
     margin-right: 2rem;
     transition: color 0.2s, border 0.2s, background-color 0.2s;
     border-radius: 1rem;
+    @include respond(tab-port){
+      
+    }
     }
 
 input[type=submit]:hover,

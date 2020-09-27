@@ -1,4 +1,9 @@
 .section-project{
+    padding: 8rem 0;
+
+    @include respond(tab-port){
+        padding: 5rem 0;
+     }
     &__text{
         float: left;
 

@@ -4,6 +4,12 @@
     width: 60%;
     margin: 0 auto;
     font-size: 110%;
+
+    @include respond(tab-port){
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0.5rem;
+      }
 }
 
 input[type=text],
@@ -12,7 +18,10 @@ textarea{
 	width: 100%;
 	padding: 0.7rem;
 	border-radius: 3px;
-	border: 1px solid #ccc;
+    border: 1px solid #ccc;
+    @include respond(tab-port){
+        padding: 0;
+      }
 }
 
 
@@ -22,6 +31,10 @@ textarea{
 
 .labelName{
    padding-left: 8rem;
+   @include respond(tab-port){
+   padding-left: 0;
+   width: 100%;
+ }
 }
 
 *:focus{outline: none;}

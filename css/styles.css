@@ -1,3 +1,18 @@
+/*
+ 0 -600px : Phone
+ 600 - 900px : Tablet Potrait
+ 900 - 1200px : Tablet Landscape
+[1200 - 1800] : Normal styles apply
+ 1800+ : Desktop
+ 
+ $break-point argument choices :
+ -- phone
+ -- tab-port
+ -- tab-land
+ -- big-desktop
+
+ 1em = 16px
+ */
 /*GLOBAL*/
 *,
 *::after,
@@ -8,6 +23,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: 'Lato',sans-serif;
@@ -17,20 +41,33 @@ body {
   padding: 2.5rem;
   color: #313b2f;
   box-sizing: border-box; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 .heading-primary {
   color: #fff;
   font-size: 4.5rem;
   font-weight: 300;
   letter-spacing: 0.5rem; }
+  @media (max-width: 37.5em) {
+    .heading-primary {
+      letter-spacing: 0.2rem;
+      font-size: 3.5rem; } }
   .heading-primary--main--name {
     color: #a8890d;
     font-family: Marcellus;
     width: 100%; }
 
 .heading-secondary {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-transform: uppercase; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
 
 .heading-secondary::after {
   content: "";
@@ -111,6 +148,23 @@ p {
   border: 1px solid transparent;
   background-color: #8f771a; }
 
+.toggle-btn {
+  display: none; }
+
+@media (max-width: 56.25em) {
+  .toggle-btn {
+    display: block;
+    float: right;
+    color: white;
+    font-size: 8rem;
+    background-color: transparent;
+    border: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s; }
+  .toggle-btn:active {
+    transform: translateY(2rem); } }
+
 input[type=submit] {
   display: inline-block;
   text-align: center;
@@ -169,6 +223,10 @@ input[type=submit]:active {
   margin-left: 3rem;
   border: 10px solid #f7f7f7;
   z-index: 1; }
+  @media (max-width: 56.25em) {
+    .myimage {
+      border: 0;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); } }
 
 .myimage::after {
   content: '';
@@ -180,6 +238,14 @@ input[type=submit]:active {
   width: 25rem;
   border: 7px solid #a8890d;
   z-index: -1; }
+  @media (max-width: 56.25em) {
+    .myimage::after {
+      display: none;
+      height: 0;
+      width: 0;
+      top: 0;
+      left: 0;
+      position: relative; } }
 
 /*ICONS*/
 .small-icon {
@@ -204,11 +270,25 @@ ion-icon[name="logo-twitter"]:hover {
 .header--main-nav {
   list-style: none;
   float: left; }
+  @media (max-width: 56.25em) {
+    .header--main-nav {
+      height: 0;
+      overflow: hidden; } }
 
 .header--main-nav li {
   display: inline-block;
   margin-left: 4rem;
   margin-top: 3rem; }
+  @media (max-width: 56.25em) {
+    .header--main-nav li {
+      list-style: none;
+      display: block; } }
+
+@media (max-width: 56.25em) {
+  .show-links {
+    height: 100vh;
+    background-color: #555555;
+    width: 20vw; } }
 
 .header--main-nav li a:link,
 .header--main-nav li a:visited {
@@ -221,6 +301,10 @@ ion-icon[name="logo-twitter"]:hover {
 .header--main-nav li a:active {
   color: #f1c40f;
   transform: scale(1.2, 1.2); }
+  @media (max-width: 56.25em) {
+    .header--main-nav li a:hover,
+    .header--main-nav li a:active {
+      padding-left: 1.5rem; } }
 
 .header--main-social {
   list-style: none;
@@ -230,6 +314,9 @@ ion-icon[name="logo-twitter"]:hover {
   display: inline-block;
   margin-right: 4rem;
   margin-top: 3.8rem; }
+  @media (max-width: 56.25em) {
+    .header--main-social li {
+      display: none; } }
 
 .header--main-social li a:link,
 .header--main-social li a:visited {
@@ -255,15 +342,28 @@ footer {
   footer--main-social {
     margin-bottom: 0;
     margin-top: 5rem; }
+    @media (max-width: 56.25em) {
+      footer--main-social {
+        text-align: center;
+        width: 100%;
+        margin-top: 4rem; } }
   footer p {
     margin-bottom: 5rem;
-    color: #fff; }
+    color: #fff;
+    width: 100%; }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -272,6 +372,13 @@ footer {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem)/2); }
   .row .col-1-of-3 {
@@ -320,6 +427,11 @@ footer {
   width: 60%;
   margin: 0 auto;
   font-size: 110%; }
+  @media (max-width: 56.25em) {
+    .section-form {
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 0.5rem; } }
 
 input[type=text],
 input[type=email],
@@ -328,19 +440,31 @@ textarea {
   padding: 0.7rem;
   border-radius: 3px;
   border: 1px solid #ccc; }
+  @media (max-width: 56.25em) {
+    input[type=text],
+    input[type=email],
+    textarea {
+      padding: 0; } }
 
 textarea {
   height: 10rem; }
 
 .labelName {
   padding-left: 8rem; }
+  @media (max-width: 56.25em) {
+    .labelName {
+      padding-left: 0;
+      width: 100%; } }
 
 *:focus {
   outline: none; }
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 6rem; }
+  padding: 6rem 0; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 4rem 0; } }
 
 .skills {
   list-style: none;
@@ -352,12 +476,16 @@ textarea {
 .section-project {
   padding: 8rem 0; }
 
-.section-project__text {
-  float: left; }
-  .section-project__text--title {
-    font-weight: bold; }
-  .section-project__text--desc {
-    margin-bottom: 2rem; }
-
-.section-project__image .img-fluid {
-  width: 100%; }
+.section-project {
+  padding: 8rem 0; }
+  @media (max-width: 56.25em) {
+    .section-project {
+      padding: 5rem 0; } }
+  .section-project__text {
+    float: left; }
+    .section-project__text--title {
+      font-weight: bold; }
+    .section-project__text--desc {
+      margin-bottom: 2rem; }
+  .section-project__image .img-fluid {
+    width: 100%; }

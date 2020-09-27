@@ -2,11 +2,29 @@
 .header--main-nav{
     list-style: none;
     float: left;
+    @include respond(tab-port){
+        height: 0;
+        overflow: hidden;
+    }
 }
 .header--main-nav li{
     display: inline-block;
     margin-left: 4rem;
     margin-top: 3rem;
+
+    @include respond(tab-port){
+        list-style: none;
+        display: block;
+    }
+    
+}
+
+@include respond(tab-port){
+    .show-links{
+        height: 100vh;
+        background-color:#555555;
+        width: 20vw;
+    }
 }
 
 .header--main-nav li a:link,
@@ -15,13 +33,19 @@
     color:$color-white;
     text-transform: uppercase;
     transition: color 0.2s, transform 0.2s;
+
 }
 
 .header--main-nav li a:hover,
 .header--main-nav li a:active{
     color: #f1c40f;
     transform: scale(1.2,1.2);
+    @include respond(tab-port){
+        padding-left: 1.5rem;
+       }
 }   
+
+
 
 .header--main-social{
     list-style: none;
@@ -31,6 +55,9 @@
     display: inline-block;
     margin-right: 4rem;
     margin-top: 3.8rem;
+    @include respond(tab-port){
+        display: none;
+       }
 }
 
 .header--main-social li a:link,

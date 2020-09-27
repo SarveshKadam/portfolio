@@ -8,20 +8,21 @@
     <title>Sarvesh Kadam</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <nav class="header--main">
             <ul class="header--main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <ul class="header--main-social">
                 <li><a href="#" class="git"><ion-icon name="logo-github" class="small-icon"></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-linkedin" class="small-icon"></ion-icon></ion-icon></a></li>
                 <li><a href="#"><ion-icon name="logo-twitter" class="small-icon"></ion-icon></ion-icon></a></li>
             </ul>
+            <a><ion-icon name="reorder-three-outline" class="toggle-btn"></ion-icon></a>
 		</nav>
             <div class="header__text-box">
             <h1 class="heading-primary">
@@ -31,14 +32,14 @@
             <a href="#" class="btn btn--full">View my work<ion-icon name="arrow-forward-outline"></ion-icon></a>
             </div>
     </header>
-    <section class="section-about">
+    <section class="section-about" id="about">
         <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">About</h2>
         </div>
         <div class="row">
             <div class="col-1-of-2 ">
                 <div class="myimage">
-                <img src="images/profile.jpg" alt="Profile photo" width="250" height="250">
+                <img src="images/myphoto1.jpg" alt="Profile photo" width="250" height="250">
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia esse ut qui at nulla autem,
                  eum minima obcaecati molestiae ducimus iure corrupti a, nam nostrum numquam facere amet iste sint.
@@ -60,7 +61,7 @@
         </div>
     </section>
 
-    <section class="section-project">
+    <section class="section-project" id="projects">
     <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">Projects</h2>
     </div>
@@ -147,7 +148,7 @@
         </div>
     </div>
     </section>
-    <section class="section-blog">
+    <section class="section-blog" id="blog">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">Blog</h2>
         </div>
@@ -202,13 +203,13 @@
             </div>
         </div>
     </section>
-    <section class="section-form">
+    <section class="section-form" id="contact">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">Contact Me</h2>
             <h3 class="heading-tertiary">I would like to hear from you</h3>
         </div>
         <div class="row">
-            <form method="post" action="#" class="contact-form">
+            <form method="post" action="mailer.php" class="contact-form">
                 <div class="row">
                     <div class="col-1-of-3 labelName">
                         <label for="name">Name</label>
@@ -276,5 +277,8 @@
 
 
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="js/zenscroll-min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 </html>

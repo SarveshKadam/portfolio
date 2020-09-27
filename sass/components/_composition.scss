@@ -4,6 +4,10 @@
     margin-left: 3rem;
     border: 10px solid $color-grey-light-1 ;
     z-index: 1;
+    @include respond(tab-port){
+        border: 0;
+        box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .15);
+    }
 }
 
 .myimage::after {
@@ -16,4 +20,12 @@
     width: 25rem;
     border: 7px solid $color-golden;
     z-index: -1;
+    @include respond(tab-port){
+        display: none;
+        height: 0;
+        width: 0;
+        top: 0;
+        left: 0;
+        position: relative;
+     }
 }
