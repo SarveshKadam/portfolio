@@ -157,11 +157,13 @@ p {
     float: right;
     color: white;
     font-size: 8rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
     background-color: transparent;
     border: transparent;
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.2s; }
+    transition: transform 0.2s ease-in; }
   .toggle-btn:active {
     transform: translateY(2rem); } }
 
@@ -282,13 +284,15 @@ ion-icon[name="logo-twitter"]:hover {
   @media (max-width: 56.25em) {
     .header--main-nav li {
       list-style: none;
-      display: block; } }
+      display: block;
+      margin-left: 2rem;
+      margin-bottom: 2rem; } }
 
 @media (max-width: 56.25em) {
   .show-links {
     height: 100vh;
     background-color: #555555;
-    width: 20vw; } }
+    width: 25vw; } }
 
 .header--main-nav li a:link,
 .header--main-nav li a:visited {

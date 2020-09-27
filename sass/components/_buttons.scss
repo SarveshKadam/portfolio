@@ -56,11 +56,13 @@
         float: right;
         color:white;
         font-size: 8rem;
+        padding-right: 1rem;
+        margin-right: 1rem;
         background-color: transparent;
         border: transparent;
         text-decoration: none;
         cursor: pointer;
-        transition: transform 0.2s;
+        transition: transform 0.2s ease-in;
     }
     
     .toggle-btn:active{
