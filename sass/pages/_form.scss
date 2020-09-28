@@ -7,8 +7,8 @@
 
     @include respond(tab-port){
         width: 100%;
-        padding-top: 0;
-        padding-bottom: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
       }
 }
 
@@ -18,7 +18,7 @@ textarea{
 	width: 100%;
 	padding: 0.7rem;
 	border-radius: 3px;
-    border: 1px solid #ccc;
+  border: 1px solid #ccc;
     @include respond(tab-port){
         padding: 0;
       }
@@ -27,6 +27,9 @@ textarea{
 
 textarea{
     height: 10rem;
+    @include respond(tab-port){
+      height: 7rem;
+    }
 }
 
 .labelName{

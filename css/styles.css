@@ -178,6 +178,11 @@ input[type=submit] {
   margin-right: 2rem;
   transition: color 0.2s, border 0.2s, background-color 0.2s;
   border-radius: 1rem; }
+  @media (max-width: 56.25em) {
+    input[type=submit] {
+      margin-right: 0;
+      margin-top: -3rem;
+      margin-bottom: 2rem; } }
 
 input[type=submit]:hover,
 input[type=submit]:active {
@@ -363,7 +368,7 @@ footer {
     margin-bottom: 8rem; }
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
-        margin-bottom: 6rem; } }
+        margin-bottom: 3rem; } }
   @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;
@@ -379,7 +384,7 @@ footer {
       @media (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
-          margin-bottom: 6rem; } }
+          margin-bottom: 3rem; } }
     @media (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
@@ -434,8 +439,8 @@ footer {
   @media (max-width: 56.25em) {
     .section-form {
       width: 100%;
-      padding-top: 0;
-      padding-bottom: 0.5rem; } }
+      padding-top: 1rem;
+      padding-bottom: 0; } }
 
 input[type=text],
 input[type=email],
@@ -452,6 +457,9 @@ textarea {
 
 textarea {
   height: 10rem; }
+  @media (max-width: 56.25em) {
+    textarea {
+      height: 7rem; } }
 
 .labelName {
   padding-left: 8rem; }
