@@ -20,7 +20,7 @@ textarea{
 	border-radius: 3px;
   border: 1px solid #ccc;
     @include respond(tab-port){
-        padding: 0;
+        padding: 0.3rem;
       }
 }
 
