@@ -1,6 +1,6 @@
 .section-form{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3.5rem;
+    padding-bottom: 2.5rem;
     width: 60%;
     margin: 0 auto;
     font-size: 110%;
@@ -26,7 +26,7 @@ textarea{
 textarea{
     height: 10rem;
     @include respond(tab-port){
-      height: 7rem;
+      height: 8rem;
     }
 }
 

@@ -57,7 +57,7 @@
 .header--main-social li{
     display: inline-block;
     margin-right: 4rem;
-    margin-top: 3.8rem;
+    margin-top: 3.6rem;
     @include respond(tab-port){
         display: none;
        }
@@ -68,6 +68,19 @@
     text-decoration: none;
     color:$color-white;
 }
+
+
+.sticky{
+	position:fixed;
+	top:0;
+	left: 0;
+    width: 100%;
+    height: 7rem;
+	background-color:$color-primary-light;
+	box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
 
 .footer--main-social{
     list-style: none;
