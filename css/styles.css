@@ -125,7 +125,7 @@ p {
 .btn--full:link, .btn--full:visited {
   border: 1px solid #ebe7e7;
   color: #ebe7e7;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transition: background-color 0.2s, border 0.2s; }
 
 .btn--full:hover, .btn--full:active {
@@ -141,7 +141,7 @@ p {
   border: 1px solid #000000;
   margin-right: 2rem;
   transition: color 0.2s, border 0.2s, background-color 0.2s;
-  border-radius: 1rem; }
+  border-radius: 0.5rem; }
 
 .btn--black:hover, .btn--black:active {
   color: #ebe7e7;
@@ -177,7 +177,7 @@ input[type=submit] {
   border: 1px solid #000000;
   margin-right: 2rem;
   transition: color 0.2s, border 0.2s, background-color 0.2s;
-  border-radius: 1rem; }
+  border-radius: 0.5rem; }
   @media (max-width: 56.25em) {
     input[type=submit] {
       margin-right: 0;
@@ -433,6 +433,19 @@ footer {
 .section-blog {
   background-color: #f7f7f7;
   padding: 5rem; }
+
+.blog-container {
+  max-width: 1140px;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.blog-box {
+  width: auto;
+  margin: 1.25rem;
+  padding: 0.8rem; }
 
 .section-form {
   padding-top: 4rem;

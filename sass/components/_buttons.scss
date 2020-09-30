@@ -12,7 +12,7 @@
 &--full:visited{
     border: 1px solid $color-pale-white;
     color:$color-pale-white;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     transition: background-color 0.2s, border 0.2s;
 } 
 
@@ -34,7 +34,7 @@
     border: 1px solid $color-black;
     margin-right: 2rem;
     transition: color 0.2s, border 0.2s, background-color 0.2s;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 &--black:hover,
@@ -81,7 +81,7 @@ input[type=submit]{
     border: 1px solid $color-black;
     margin-right: 2rem;
     transition: color 0.2s, border 0.2s, background-color 0.2s;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     @include respond(tab-port){
       margin-right: 0;
       margin-top: -3rem;
