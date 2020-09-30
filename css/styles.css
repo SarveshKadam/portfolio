@@ -348,6 +348,9 @@ ion-icon[name="logo-twitter"]:hover {
 footer {
   background-color: #414d3e;
   text-align: center; }
+  @media (max-width: 56.25em) {
+    footer {
+      text-align: center; } }
   footer--main-social {
     margin-bottom: 0;
     margin-top: 5rem; }
@@ -355,7 +358,8 @@ footer {
       footer--main-social {
         text-align: center;
         width: 100%;
-        margin-top: 4rem; } }
+        margin-top: 4rem;
+        margin-left: 1.5rem; } }
   footer p {
     margin-bottom: 5rem;
     color: #fff;
@@ -428,7 +432,7 @@ footer {
 
 .section-blog {
   background-color: #f7f7f7;
-  padding: 6rem; }
+  padding: 5rem; }
 
 .section-form {
   padding-top: 4rem;
@@ -438,9 +442,7 @@ footer {
   font-size: 110%; }
   @media (max-width: 56.25em) {
     .section-form {
-      width: 100%;
-      padding-top: 1rem;
-      padding-bottom: 0; } }
+      width: 100%; } }
 
 input[type=text],
 input[type=email],
