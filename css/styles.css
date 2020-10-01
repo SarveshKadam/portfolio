@@ -38,12 +38,8 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
-  padding: 2.5rem;
   color: #313b2f;
   box-sizing: border-box; }
-  @media (max-width: 56.25em) {
-    body {
-      padding: 0; } }
 
 .heading-primary {
   color: #fff;
@@ -130,6 +126,18 @@ p {
 
 .btn--full:hover, .btn--full:active {
   background-color: #8f771a;
+  border: 1px solid transparent; }
+
+.btn--gold:link, .btn--gold:visited {
+  padding: 0.5rem 1rem;
+  border: 1px solid #a8890d;
+  color: #a8890d;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s, border 0.2s; }
+
+.btn--gold:hover, .btn--gold:active {
+  background-color: #8f771a;
+  color: white;
   border: 1px solid transparent; }
 
 .btn ion-icon[name="arrow-forward-outline"] {
@@ -238,7 +246,8 @@ input[type=submit]:active {
   .myimage img {
     border: 1px solid #586a55;
     border-radius: 5px;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    height: 50%; }
     @media (max-width: 56.25em) {
       .myimage img {
         border-radius: 50%;
@@ -418,7 +427,7 @@ footer {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(65, 77, 62, 0.7), rgba(49, 59, 47, 0.7)), url("../../images/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(65, 77, 62, 0.7), rgba(49, 59, 47, 0.7)), url("../../images/hero.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;
