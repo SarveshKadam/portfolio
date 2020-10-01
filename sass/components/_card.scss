@@ -4,6 +4,11 @@
     -moz-perspective: 150rem;
     height: 43rem;
     position: relative;
+    @include respond(tab-port){
+        perspective: 0;
+    -moz-perspective: 0;
+       }
+   
 
     &__side{
         height: 41rem;
@@ -15,24 +20,35 @@
         backface-visibility: hidden;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: .15);
+        @include respond(tab-port){
+            height: auto;
+           }
+       
 
-    &--front{
-
-    }
 
     &--back{
         background-image: linear-gradient(to right bottom,$color-golden-light,$color-golden-med);
         transform: rotateY(180deg);
+        @include respond(tab-port){
+            display: none;
+            transform: none;
+          }
     }
 
 }
     
     &:hover &__side--front{
         transform: rotateY(-180deg);
+        @include respond(tab-port){
+            transform: none;
+           }
     }
 
     &:hover &__side--back{
         transform: rotateY(0);
+        @include respond(tab-port){
+            transform: none;
+           }
     }
 
     &__cta{

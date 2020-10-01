@@ -203,6 +203,10 @@ input[type=submit]:active {
   -moz-perspective: 150rem;
   height: 43rem;
   position: relative; }
+  @media (max-width: 56.25em) {
+    .card {
+      perspective: 0;
+      -moz-perspective: 0; } }
   .card__side {
     height: 41rem;
     transition: all 0.8s ease;
@@ -213,13 +217,26 @@ input[type=submit]:active {
     backface-visibility: hidden;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    @media (max-width: 56.25em) {
+      .card__side {
+        height: auto; } }
     .card__side--back {
       background-image: linear-gradient(to right bottom, #f5dc7b, #d7b011);
       transform: rotateY(180deg); }
+      @media (max-width: 56.25em) {
+        .card__side--back {
+          display: none;
+          transform: none; } }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
+    @media (max-width: 56.25em) {
+      .card:hover .card__side--front {
+        transform: none; } }
   .card:hover .card__side--back {
     transform: rotateY(0); }
+    @media (max-width: 56.25em) {
+      .card:hover .card__side--back {
+        transform: none; } }
   .card__cta {
     position: absolute;
     top: 50%;
@@ -365,25 +382,16 @@ ion-icon[name="logo-twitter"]:hover {
   color: #fff; }
 
 footer {
-  background-color: #414d3e;
-  text-align: center; }
+  background-color: #414d3e; }
   @media (max-width: 56.25em) {
-    footer {
-      text-align: center; } }
-  footer--main-social {
-    margin-bottom: 0;
-    margin-top: 5rem; }
-    @media (max-width: 56.25em) {
-      footer--main-social {
-        text-align: center;
-        width: 100%;
-        margin-top: 4rem;
-        margin-left: 1.5rem; } }
+    footer--main-social {
+      width: 100%;
+      margin-top: 2rem; } }
   footer p {
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
     color: #fff;
     width: 100%;
-    margin-top: 3rem; }
+    margin-top: 2.5rem; }
 
 .row {
   max-width: 114rem;

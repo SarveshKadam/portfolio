@@ -31,28 +31,6 @@
         width: 100%;
     }
 }
-
 .myinfo{
     margin-bottom: 1.5rem;
 }
-
-
-// .myimage::after {
-//     content: '';
-//     position: absolute;
-//     display: block;
-//     left: -3rem;
-//     top: 2rem;
-//     height: 25rem;
-//     width: 25rem;
-//     border: 7px solid $color-golden;
-//     z-index: -1;
-//     @include respond(tab-port){
-//         display: none;
-//         height: 0;
-//         width: 0;
-//         top: 0;
-//         left: 0;
-//         position: relative;
-//      }
-// }
