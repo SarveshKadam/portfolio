@@ -2,8 +2,18 @@ footer{
     background-color: $color-primary;
 
     &--main-social{
-        margin-left: 2rem;
-        margin-right: 2rem;
+        list-style: none;
+        & li{
+            display: inline-block;
+            margin-left: 2rem;
+            margin-right: 2rem;
+
+            & a:link,
+            & a:visited {
+                text-decoration: none;
+                color: #fff; }
+        }
+        
         @include respond(tab-port){
             width: 100%;
             margin-top: 2rem;
@@ -17,3 +27,16 @@ footer{
         margin-top: 2.5rem;
     }
 }
+
+/* .footer--main-social {
+  list-style: none; }
+
+.footer--main-social li {
+  display: inline-block;
+  margin-right: 4rem;
+  margin-top: 3.8rem; }
+
+.footer--main-social li a:link,
+.footer--main-social li a:visited {
+  text-decoration: none;
+  color: #fff; } */

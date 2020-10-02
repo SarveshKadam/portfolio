@@ -182,7 +182,7 @@ input[type=submit] {
   text-decoration: none;
   background-color: #fff;
   color: #000000;
-  border: 1px solid #000000;
+  border: 1.5px solid #000000;
   margin-right: 2rem;
   transition: color 0.2s, border 0.2s, background-color 0.2s;
   border-radius: 0.5rem; }
@@ -378,7 +378,8 @@ ion-icon[name="logo-twitter"]:hover {
 
 .footer--main-social li {
   display: inline-block;
-  margin-right: 4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   margin-top: 3.8rem; }
 
 .footer--main-social li a:link,
@@ -389,8 +390,15 @@ ion-icon[name="logo-twitter"]:hover {
 footer {
   background-color: #414d3e; }
   footer--main-social {
-    margin-left: 2rem;
-    margin-right: 2rem; }
+    list-style: none; }
+    footer--main-social li {
+      display: inline-block;
+      margin-left: 2rem;
+      margin-right: 2rem; }
+      footer--main-social li a:link,
+      footer--main-social li a:visited {
+        text-decoration: none;
+        color: #fff; }
     @media (max-width: 56.25em) {
       footer--main-social {
         width: 100%;
@@ -401,11 +409,23 @@ footer {
     width: 100%;
     margin-top: 2.5rem; }
 
+/* .footer--main-social {
+  list-style: none; }
+
+.footer--main-social li {
+  display: inline-block;
+  margin-right: 4rem;
+  margin-top: 3.8rem; }
+
+.footer--main-social li a:link,
+.footer--main-social li a:visited {
+  text-decoration: none;
+  color: #fff; } */
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 5rem; }
+    margin-bottom: rem; }
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 3rem; } }
@@ -468,7 +488,7 @@ footer {
 
 .section-blog {
   background-color: #f7f7f7;
-  padding: 5rem; }
+  padding: 5.5rem; }
 
 .blog-container {
   max-width: 1140px;
@@ -485,7 +505,7 @@ footer {
 
 .section-form {
   padding-top: 3.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3rem;
   width: 60%;
   margin: 0 auto;
   font-size: 110%; }
@@ -496,9 +516,10 @@ footer {
 input[name=name],
 input[type=email],
 textarea {
-  width: 100%;
-  padding: 0.7rem;
+  width: 70%;
+  padding: 0.9rem;
   border-radius: 3px;
+  margin-bottom: 2.25rem;
   border: 1px solid #a8890d; }
   @media (max-width: 56.25em) {
     input[name=name],
@@ -545,7 +566,7 @@ textarea {
   padding: 8rem 0; }
 
 .section-project {
-  padding: 8rem 0; }
+  padding: 10rem 0; }
   @media (max-width: 56.25em) {
     .section-project {
       padding: 5rem 0; } }
