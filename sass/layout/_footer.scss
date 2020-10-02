@@ -2,6 +2,8 @@ footer{
     background-color: $color-primary;
 
     &--main-social{
+        margin-left: 2rem;
+        margin-right: 2rem;
         @include respond(tab-port){
             width: 100%;
             margin-top: 2rem;

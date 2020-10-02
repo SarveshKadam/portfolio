@@ -1,12 +1,15 @@
 /*ICONS*/
 .small-icon{
-    font-size: 2.2rem;
+	font-size: 2.2rem;
+	
+	vertical-align: middle;
 }
 
 
 ion-icon[name="logo-github"],
 ion-icon[name="logo-linkedin"],
 ion-icon[name="logo-twitter"]{
+	text-align: center;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }

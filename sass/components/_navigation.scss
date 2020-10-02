@@ -79,6 +79,9 @@
 	background-color:$color-primary-light;
 	box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
+    @include respond(tab-port){
+        display: none;
+       }
 }
 
 

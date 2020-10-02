@@ -10,16 +10,22 @@
       }
 }
 
-input[type=text],
+input[name=name],
 input[type=email],
 textarea{
 	width: 100%;
 	padding: 0.7rem;
 	border-radius: 3px;
-  border: 1px solid #ccc;
+  border: 1px solid $color-golden;
     @include respond(tab-port){
         padding: 0.3rem;
       }
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus{
+  border: 2px solid $color-golden;
 }
 
 

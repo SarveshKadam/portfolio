@@ -282,11 +282,13 @@ input[type=submit]:active {
 
 /*ICONS*/
 .small-icon {
-  font-size: 2.2rem; }
+  font-size: 2.2rem;
+  vertical-align: middle; }
 
 ion-icon[name="logo-github"],
 ion-icon[name="logo-linkedin"],
 ion-icon[name="logo-twitter"] {
+  text-align: center;
   -webkit-transition: color 0.2s;
   transition: color 0.2s; }
 
@@ -367,6 +369,9 @@ ion-icon[name="logo-twitter"]:hover {
   background-color: #586a55;
   box-shadow: 0 2px 2px #efefef;
   z-index: 9999; }
+  @media (max-width: 56.25em) {
+    .sticky {
+      display: none; } }
 
 .footer--main-social {
   list-style: none; }
@@ -383,10 +388,13 @@ ion-icon[name="logo-twitter"]:hover {
 
 footer {
   background-color: #414d3e; }
-  @media (max-width: 56.25em) {
-    footer--main-social {
-      width: 100%;
-      margin-top: 2rem; } }
+  footer--main-social {
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    @media (max-width: 56.25em) {
+      footer--main-social {
+        width: 100%;
+        margin-top: 2rem; } }
   footer p {
     margin-bottom: 2.5rem;
     color: #fff;
@@ -397,7 +405,7 @@ footer {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 5rem; }
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 3rem; } }
@@ -485,18 +493,23 @@ footer {
     .section-form {
       width: 100%; } }
 
-input[type=text],
+input[name=name],
 input[type=email],
 textarea {
   width: 100%;
   padding: 0.7rem;
   border-radius: 3px;
-  border: 1px solid #ccc; }
+  border: 1px solid #a8890d; }
   @media (max-width: 56.25em) {
-    input[type=text],
+    input[name=name],
     input[type=email],
     textarea {
       padding: 0.3rem; } }
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  border: 2px solid #a8890d; }
 
 textarea {
   height: 10rem; }
