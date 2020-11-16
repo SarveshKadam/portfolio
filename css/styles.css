@@ -80,6 +80,11 @@ body {
   margin-bottom: 3rem;
   font-weight: 500; }
 
+.heading-quarter {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #a8890d; }
+
 p {
   font-size: 1.6rem; }
 
@@ -98,6 +103,13 @@ p {
   padding: 0rem 2rem;
   margin-left: 2rem;
   margin-bottom: 2rem;
+  color: #a8890d; }
+
+.myinfo {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem; }
+
+.blog-link {
   color: #a8890d; }
 
 .u-center-text {
@@ -285,6 +297,10 @@ input[type=submit]:active {
   font-size: 2.2rem;
   vertical-align: middle; }
 
+.xtra-small-icon {
+  font-size: 1.8rem;
+  vertical-align: middle; }
+
 ion-icon[name="logo-github"],
 ion-icon[name="logo-linkedin"],
 ion-icon[name="logo-twitter"] {
@@ -378,9 +394,9 @@ ion-icon[name="logo-twitter"]:hover {
 
 .footer--main-social li {
   display: inline-block;
-  margin-right: 2rem;
-  margin-left: 2rem;
-  margin-top: 3.8rem; }
+  margin-right: 4rem;
+  margin-top: 3.8rem;
+  margin-left: 2rem; }
 
 .footer--main-social li a:link,
 .footer--main-social li a:visited {

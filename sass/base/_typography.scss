@@ -46,6 +46,12 @@
   font-weight: 500;
 }
 
+.heading-quarter{
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: $color-golden;
+}
+
 p{
   font-size: 1.6rem;
 }
@@ -73,4 +79,13 @@ p{
   margin-left: 2rem;
   margin-bottom: 2rem;
   color:$color-golden;
+}
+
+.myinfo{
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+}
+
+.blog-link{
+  color: $color-golden;
 }
