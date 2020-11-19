@@ -1,12 +1,11 @@
-# Sarvesh Kadam'm Portfolio :work:
+# Sarvesh Kadam's Portfolio
 
 ## A simple developer portfolio!
 
 <h2 align="center">
-  <img src="https://github.com/cobidev/gatsby-simplefolio/blob/master/examples/example.gif" alt="Simplefolio" width="600px" />
+  <img src="https://github.com/SarveshKadam/portfolio/tree/master/images/myportfolio.gif" alt="Simplefolio" width="600px" />
   <br>
 </h2>
-
 
 
 ## Features
