@@ -36,7 +36,7 @@ I useD [Netlify](https://netlify.com) to put your website online!
 
 ## Author
 
-- **Sarvesh Kadam** - [https://github.com/cobidev](https://github.com/SarveshKadam)
+- **Sarvesh Kadam** - [https://github.com/SarveshKadam](https://github.com/SarveshKadam)
 
 ## Status
 
