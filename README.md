@@ -31,7 +31,7 @@ I useD [Netlify](https://netlify.com) to put your website online!
 
 - [Tailwind](https://tailwindcss.com/) - Front-end component library
 - [Sass](https://sass-lang.com/documentation) - CSS extension language
-- [zenscroll.js](https://scrollrevealjs.org/) - JavaScript library
+- [zenscroll.js](https://github.com/zengabor/zenscroll) - JavaScript library
 
 ## Author
 
