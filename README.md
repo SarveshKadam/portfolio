@@ -3,7 +3,7 @@
 ## A simple developer portfolio!
 
 <h2 align="center">
-  <img src="https://github.com/SarveshKadam/portfolio/tree/master/images/myportfolio.gif" alt="Simplefolio" width="600px" />
+  <img src="./images/myportfolio.gif" alt="My portfolio" width="600px" />
   <br>
 </h2>
 
