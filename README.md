@@ -24,7 +24,7 @@ To view a live example, **[click here](https://www.sarveshkadam.com/)**
 ## Deployment 📦
 
 
-I useD [Netlify](https://netlify.com) to put your website online!
+I used [Netlify](https://netlify.com) to put your website online!
 
 
 ## Technologies used 🛠️
