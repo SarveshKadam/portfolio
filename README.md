@@ -1,4 +1,4 @@
-# Sarvesh Kadam's Portfolio
+# Sarvesh Kadam's Portfolio 🚀
 
 ## A simple developer portfolio!
 
@@ -8,7 +8,7 @@
 </h2>
 
 
-## Features
+## Features ⭐
 
 ⚡️ Modern UI Design\
 ⚡️ One Page Layout\
@@ -33,10 +33,10 @@ I useD [Netlify](https://netlify.com) to put your website online!
 - [Sass](https://sass-lang.com/documentation) - CSS extension language
 - [zenscroll.js](https://github.com/zengabor/zenscroll) - JavaScript library
 
-## Author
+## Author ✒️
 
 - **Sarvesh Kadam** - [https://github.com/SarveshKadam](https://github.com/SarveshKadam)
 
-## Status
+## Status 🌠
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/75600296-89eb-4640-9e7e-fa87fba7ce76/deploy-status)](https://app.netlify.com/sites/simplfolio/deploys)
