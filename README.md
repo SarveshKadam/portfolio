@@ -14,7 +14,7 @@
 ⚡️ One Page Layout\
 ⚡️ Styled with Tailwind + Custom SCSS\
 ⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
+⚡️ Valid HTML5 & CSS3
 
 To view a live example, **[click here](https://www.sarveshkadam.com/)**
 
