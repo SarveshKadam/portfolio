@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/SarveshKadam/portfolio#readme",
   "devDependencies": {
-    "node-sass": "^4.14.1"
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }
