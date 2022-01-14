@@ -1,5 +1,5 @@
 .heading-primary{
-    color:$color-white;
+    color:$font-primary;
     font-size: 4.5rem;
     font-weight: 300;
     letter-spacing: 0.5rem;
@@ -11,10 +11,11 @@
 
     &--main--name{
         color:$color-golden;
-        font-family: Marcellus;
+        font-family: Raleway;
         width: 100%;
       }
 }
+
 
 
 .heading-secondary{

@@ -10,8 +10,8 @@
 
 &--full:link,
 &--full:visited{
-    border: 1px solid $color-pale-white;
-    color:$color-pale-white;
+    border: 1px solid $font-primary;
+    color:$font-primary;
     border-radius: 0.5rem;
     transition: background-color 0.2s, border 0.2s;
 } 

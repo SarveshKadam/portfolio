@@ -1,11 +1,12 @@
 .header{
     height: 100vh;
-    background-image: linear-gradient(to right bottom,rgba($color-primary, 0.7),rgba($color-primary-dark, 0.7)), url("../../images/hero.png");
+    // background-image: linear-gradient(to right bottom,rgba($color-primary, 0.7),rgba($color-primary, 0.7)), url("../../images/hero.png");
     background-size: cover;
     background-position: center;
     overflow: hidden;
     background-attachment: fixed;
     position: relative;
+    background-color: #fff;
 }
 
 .header__text-box{
@@ -19,11 +20,21 @@
 .heading-primary{
     &--main{
    display: block;
+   font-weight: bold;
     }
     &--sub{
         display: block;
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
 
  .header__text-box a{
      display: inline-block; }
+
+
+.head-btn{
+    font-weight: bold;
+    color: $font-primary;
+  }

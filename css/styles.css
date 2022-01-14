@@ -34,15 +34,15 @@ html {
       font-size: 75%; } }
 
 body {
-  font-family: 'Lato',sans-serif;
+  font-family: 'Raleway',sans-serif;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.7;
   color: #313b2f;
   box-sizing: border-box; }
 
 .heading-primary {
-  color: #fff;
+  color: #5E5E5E;
   font-size: 4.5rem;
   font-weight: 300;
   letter-spacing: 0.5rem; }
@@ -52,7 +52,7 @@ body {
       font-size: 3.5rem; } }
   .heading-primary--main--name {
     color: #a8890d;
-    font-family: Marcellus;
+    font-family: Raleway;
     width: 100%; }
 
 .heading-secondary {
@@ -131,8 +131,8 @@ p {
   text-decoration: none; }
 
 .btn--full:link, .btn--full:visited {
-  border: 1px solid #ebe7e7;
-  color: #ebe7e7;
+  border: 1px solid #5E5E5E;
+  color: #5E5E5E;
   border-radius: 0.5rem;
   transition: background-color 0.2s, border 0.2s; }
 
@@ -273,7 +273,7 @@ input[type=submit]:active {
       text-align: center;
       float: none; } }
   .myimage img {
-    border: 1px solid #586a55;
+    border: 1px solid #ebe7e7;
     border-radius: 5px;
     padding: 0.5rem;
     height: 50%; }
@@ -318,6 +318,9 @@ ion-icon[name="logo-twitter"]:hover {
   color: #1da1f2; }
 
 /*---------- MAIN NAVIGATION -------------*/
+.header--main {
+  background-color: #f7f7f7; }
+
 .header--main-nav {
   list-style: none;
   float: left; }
@@ -346,7 +349,7 @@ ion-icon[name="logo-twitter"]:hover {
 .header--main-nav li a:link,
 .header--main-nav li a:visited {
   text-decoration: none;
-  color: #fff;
+  color: #5E5E5E;
   text-transform: uppercase;
   transition: color 0.2s, transform 0.2s; }
 
@@ -374,7 +377,7 @@ ion-icon[name="logo-twitter"]:hover {
 .header--main-social li a:link,
 .header--main-social li a:visited {
   text-decoration: none;
-  color: #fff; }
+  color: #5E5E5E; }
 
 .sticky {
   position: fixed;
@@ -382,7 +385,7 @@ ion-icon[name="logo-twitter"]:hover {
   left: 0;
   width: 100%;
   height: 7rem;
-  background-color: #586a55;
+  background-color: #f7f7f7;
   box-shadow: 0 2px 2px #efefef;
   z-index: 9999; }
   @media (max-width: 56.25em) {
@@ -395,16 +398,15 @@ ion-icon[name="logo-twitter"]:hover {
 .footer--main-social li {
   display: inline-block;
   margin-right: 4rem;
-  margin-top: 3.8rem;
-  margin-left: 2rem; }
+  margin-top: 3.8rem; }
 
 .footer--main-social li a:link,
 .footer--main-social li a:visited {
   text-decoration: none;
-  color: #fff; }
+  color: #5E5E5E; }
 
 footer {
-  background-color: #414d3e; }
+  background-color: #FFFFFF; }
   footer--main-social {
     list-style: none; }
     footer--main-social li {
@@ -479,12 +481,12 @@ footer {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(65, 77, 62, 0.7), rgba(49, 59, 47, 0.7)), url("../../images/hero.png");
   background-size: cover;
   background-position: center;
   overflow: hidden;
   background-attachment: fixed;
-  position: relative; }
+  position: relative;
+  background-color: #fff; }
 
 .header__text-box {
   position: absolute;
@@ -494,13 +496,21 @@ footer {
   text-align: center; }
 
 .heading-primary--main {
-  display: block; }
+  display: block;
+  font-weight: bold; }
 
 .heading-primary--sub {
-  display: block; }
+  display: block;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
 
 .header__text-box a {
   display: inline-block; }
+
+.head-btn {
+  font-weight: bold;
+  color: #5E5E5E; }
 
 .section-blog {
   background-color: #f7f7f7;

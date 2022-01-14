@@ -1,4 +1,7 @@
 /*---------- MAIN NAVIGATION -------------*/
+.header--main{
+    background-color:$color-grey-light-1;
+}
 .header--main-nav{
     list-style: none;
     float: left;
@@ -33,7 +36,7 @@
 .header--main-nav li a:link,
 .header--main-nav li a:visited{
     text-decoration: none;
-    color:$color-white;
+    color:$font-primary;
     text-transform: uppercase;
     transition: color 0.2s, transform 0.2s;
 
@@ -66,7 +69,7 @@
 .header--main-social li a:link,
 .header--main-social li a:visited{
     text-decoration: none;
-    color:$color-white;
+    color:$font-primary;
 }
 
 
@@ -76,7 +79,7 @@
 	left: 0;
     width: 100%;
     height: 7rem;
-	background-color:$color-primary-light;
+	background-color:$color-grey-light-1;
 	box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
     @include respond(tab-port){
@@ -97,5 +100,5 @@
 .footer--main-social li a:link,
 .footer--main-social li a:visited{
     text-decoration: none;
-    color:$color-white;
+    color:$font-primary;
 }
