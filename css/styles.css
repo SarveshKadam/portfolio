@@ -130,6 +130,9 @@ p {
   padding: 1rem 2rem;
   text-decoration: none; }
 
+.btn:hover, .btn:active {
+  color: #fff; }
+
 .btn--full:link, .btn--full:visited {
   border: 1px solid #5E5E5E;
   color: #5E5E5E;
@@ -138,6 +141,7 @@ p {
 
 .btn--full:hover, .btn--full:active {
   background-color: #8f771a;
+  color: #fff;
   border: 1px solid transparent; }
 
 .btn--gold:link, .btn--gold:visited {
@@ -175,7 +179,7 @@ p {
   .toggle-btn {
     display: block;
     float: right;
-    color: white;
+    color: #5E5E5E;
     font-size: 8rem;
     padding-right: 1rem;
     margin-right: 1rem;
@@ -273,15 +277,12 @@ input[type=submit]:active {
       text-align: center;
       float: none; } }
   .myimage img {
-    border: 1px solid #ebe7e7;
+    border: 1px solid #a8890d;
     border-radius: 5px;
     padding: 0.5rem;
     height: 50%; }
     @media (max-width: 56.25em) {
       .myimage img {
-        border-radius: 50%;
-        height: 30rem;
-        width: 30rem;
         margin-left: auto;
         margin-right: auto; } }
 
@@ -352,6 +353,10 @@ ion-icon[name="logo-twitter"]:hover {
   color: #5E5E5E;
   text-transform: uppercase;
   transition: color 0.2s, transform 0.2s; }
+  @media (max-width: 56.25em) {
+    .header--main-nav li a:link,
+    .header--main-nav li a:visited {
+      color: #fff; } }
 
 .header--main-nav li a:hover,
 .header--main-nav li a:active {
@@ -379,6 +384,10 @@ ion-icon[name="logo-twitter"]:hover {
   text-decoration: none;
   color: #5E5E5E; }
 
+.header--main-social li a:hover,
+.header--main-social li a:active {
+  color: #fff; }
+
 .sticky {
   position: fixed;
   top: 0;
@@ -403,10 +412,11 @@ ion-icon[name="logo-twitter"]:hover {
 .footer--main-social li a:link,
 .footer--main-social li a:visited {
   text-decoration: none;
-  color: #5E5E5E; }
+  color: #5E5E5E;
+  margin-left: 1rem; }
 
 footer {
-  background-color: #FFFFFF; }
+  background-color: #f7f7f7; }
   footer--main-social {
     list-style: none; }
     footer--main-social li {
@@ -423,22 +433,10 @@ footer {
         margin-top: 2rem; } }
   footer p {
     margin-bottom: 2.5rem;
-    color: #fff;
+    color: #5E5E5E;
     width: 100%;
     margin-top: 2.5rem; }
 
-/* .footer--main-social {
-  list-style: none; }
-
-.footer--main-social li {
-  display: inline-block;
-  margin-right: 4rem;
-  margin-top: 3.8rem; }
-
-.footer--main-social li a:link,
-.footer--main-social li a:visited {
-  text-decoration: none;
-  color: #fff; } */
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -579,7 +577,8 @@ textarea {
   padding: 6rem 0; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 4rem 0; } }
+      padding: 4rem 0;
+      text-align: center; } }
 
 .skills {
   list-style: none;
@@ -590,6 +589,10 @@ textarea {
 
 .section-project {
   padding: 8rem 0; }
+  @media (max-width: 56.25em) {
+    .section-project {
+      padding: 4rem 0;
+      text-align: center; } }
 
 .section-project {
   padding: 10rem 0; }

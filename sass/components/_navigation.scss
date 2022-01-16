@@ -39,6 +39,9 @@
     color:$font-primary;
     text-transform: uppercase;
     transition: color 0.2s, transform 0.2s;
+    @include respond(tab-port){
+        color: #fff;
+    }
 
 }
 
@@ -72,6 +75,11 @@
     color:$font-primary;
 }
 
+.header--main-social li a:hover,
+.header--main-social li a:active{
+    color: #fff;
+}
+
 
 .sticky{
 	position:fixed;
@@ -101,4 +109,5 @@
 .footer--main-social li a:visited{
     text-decoration: none;
     color:$font-primary;
+    margin-left: 1rem;
 }

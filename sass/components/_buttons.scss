@@ -8,6 +8,11 @@
     text-decoration: none;
     }
 
+    &:hover,
+    &:active{
+        color: #fff;
+    }
+
 &--full:link,
 &--full:visited{
     border: 1px solid $font-primary;
@@ -19,6 +24,7 @@
 &--full:hover,
 &--full:active{
     background-color: #8f771a;
+    color: #fff;
     border: 1px solid transparent;
 } 
 
@@ -70,7 +76,7 @@
     .toggle-btn{
         display: block;
         float: right;
-        color:white;
+        color:$font-primary;
         font-size: 8rem;
         padding-right: 1rem;
         margin-right: 1rem;

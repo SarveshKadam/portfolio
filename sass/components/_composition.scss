@@ -10,16 +10,16 @@
         float: none;
     }
     img{
-    border: 1px solid $color-primary-light ;
+    border: 1px solid $color-golden ;
     border-radius: 5px;
     padding: 0.5rem;
     height: 50%;
     @include respond(tab-port){
-        border-radius: 50%;
-        height: 30rem;
-        width: 30rem;
+        // border-radius: 50%;
+        // height: 30rem;
+        // width: 30rem;
         margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
     }
     }
 
