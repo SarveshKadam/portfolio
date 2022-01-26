@@ -594,6 +594,9 @@ textarea {
       padding: 4rem 0;
       text-align: center; } }
 
+.homepage-icon {
+  vertical-align: middle; }
+
 .section-project {
   padding: 10rem 0; }
   @media (max-width: 56.25em) {
